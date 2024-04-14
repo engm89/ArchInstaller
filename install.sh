@@ -733,9 +733,9 @@ installExtraApplications() {
         # read -r -a packagesArr <<< "$packages"
         arch-chroot /mnt pacman --noconfirm -S $packages
         #cp 10-keyboard.conf -O /mnt/etc/X11/xorg.conf.d/
-        cp ./Linux_terminal_color/bash.bashrc /mnt/etc/bash.bashrc
-        cp ./Linux_terminal_color/DIR_COLORS /mnt/etc/
-        cp ./Linux_terminal_color/.bashrc /mnt//etc/skel/.bashrc
+        # cp ./Linux_terminal_color/bash.bashrc /mnt/etc/bash.bashrc
+        # cp ./Linux_terminal_color/DIR_COLORS /mnt/etc/
+        # cp ./Linux_terminal_color/.bashrc /mnt//etc/skel/.bashrc
 
         # arch-chroot /mnt wget https://averagelinuxuser.com/assets/images/posts/2019-01-18-linux-terminal-color/Linux_terminal_color.zip
         # arch-chroot /mnt unzip Linux_terminal_color.zip
