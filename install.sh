@@ -655,10 +655,10 @@ installDesktop() {
             arch-chroot /mnt pacman --noconfirm -S xfce4 xfce4-goodies network-manager-applet 
             ;;
         deepin)
-            arch-chroot /mnt pacman --noconfirm -S deepin deepin-kwin deepin-extra
+            arch-chroot /mnt pacman --noconfirm -S deepin deepin-kwin deepin-extra lightdm-deepin-greeter lightdm
             ;;
         deepin-minimal)
-            arch-chroot /mnt pacman --noconfirm -S deepin deepin-kwin
+            arch-chroot /mnt pacman --noconfirm -S deepin deepin-kwin lightdm-deepin-greeter lightdm
             ;;
         cinnamon)
             arch-chroot /mnt pacman --noconfirm -S cinnamon
