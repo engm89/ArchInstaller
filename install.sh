@@ -562,7 +562,7 @@ setupX11Keyboard() {
     yesno=$(yesnoBox 0 0 "$(eval_gettext "Keyboard")" "$(eval_gettext "Do you want to set keyboard distribution for X11 to 'es'?")")
     if [ "$yesno" == "0" ]; then
         reset
-        cp 10-keyboard.conf -O /mnt/etc/X11/xorg.conf.d/
+        cp 00-keyboard.conf -O /mnt/etc/X11/xorg.conf.d/
     fi
 }
 
